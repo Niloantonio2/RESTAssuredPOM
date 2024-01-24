@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="Api CRUD" skipped="0" tests="4" time="3.65" timestamp="2024-01-24 04:51:20"><testcase name="Creacion usuario &lt;Escenario&gt;"><failure message="expected:&lt;500&gt; but was:&lt;200&gt;" type="junit.framework.AssertionFailedError">expected:&lt;500&gt; but was:&lt;200&gt;</failure><system-err>expected:&lt;500&gt; but was:&lt;200&gt;&#13;
+junit.framework.Assert.fail(Assert.java:57)&#13;
+junit.framework.Assert.failNotEquals(Assert.java:329)&#13;
+junit.framework.Assert.assertEquals(Assert.java:78)&#13;
+junit.framework.Assert.assertEquals(Assert.java:234)&#13;
+junit.framework.Assert.assertEquals(Assert.java:241)&#13;
+co.com.templay.api.pom.steps.PostStep.validarResponseCode(PostStep.java:34)&#13;
+co.com.templay.api.pom.stepDefinitions.CrearUsuarioStepDefinitions.laRespuestaDeLaPeticionPOSTDebeTenerUnCodigoDeEstado(CrearUsuarioStepDefinitions.java:30)&#13;
+✽.la respuesta de la peticion POST debe tener un codigo de estado 500(file:///C:/Users/niloa/OneDrive/Escritorio/Automation/SerenityPOM/TemplayAPI/RESTAssuredPOM/src/test/resources/features/crudApi.feature:22)&#13;
+</system-err></testcase><testcase name="Consultar usuario &lt;Escenario&gt;"/></testsuite>

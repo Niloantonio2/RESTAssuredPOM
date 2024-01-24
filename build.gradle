@@ -1,0 +1,92 @@
+
+buildscript {
+    ext.serenityCoreVersion = '3.3.0'
+    ext.serenityReport = '3.4.2'
+
+    repositories {
+        mavenLocal()
+        mavenCentral()
+        jcenter()
+
+    }
+
+
+    dependencies {
+        classpath("net.serenity-bdd:serenity-gradle-plugin:$serenityReport")
+        classpath "net.serenity-bdd:serenity-single-page-report:$serenityCoreVersion"
+    }
+}
+
+plugins {
+    id "net.serenity-bdd.serenity-gradle-plugin" version "${serenityCoreVersion}"
+    id 'java'
+    id 'eclipse'
+    id 'idea'
+    id 'java-library'
+}
+
+defaultTasks 'clean','test','aggregate'
+
+group 'co.com.templay.pom'
+version '1.0-SNAPSHOT'
+
+
+compileJava.options.encoding = "UTF-8"
+compileTestJava.options.encoding = "UTF-8"
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+    jcenter()
+}
+
+ext {
+    junitVersion = '5.8.2'
+    logVersion = '1.2.10'
+    lombokVersion = '1.18.22'
+}
+
+dependencies {
+
+    implementation ("net.serenity-bdd:serenity-core:${serenityCoreVersion}")
+    implementation "net.serenity-bdd:serenity-junit5:${serenityCoreVersion}"
+    implementation "net.serenity-bdd:serenity-cucumber:${serenityCoreVersion}"
+
+    implementation "net.serenity-bdd:serenity-rest-assured:${serenityCoreVersion}"
+
+    implementation "net.serenity-bdd:serenity-ensure:${serenityCoreVersion}"
+    implementation "net.serenity-bdd:serenity-screenplay:${serenityCoreVersion}"
+    implementation "net.serenity-bdd:serenity-screenplay-webdriver:${serenityCoreVersion}"
+    implementation "net.serenity-bdd:serenity-screenplay-rest:${serenityCoreVersion}"
+
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.16.1'
+
+
+    implementation "ch.qos.logback:logback-classic:${logVersion}"
+    implementation "ch.qos.logback:logback-core:${logVersion}"
+
+    // implementation group: 'com.github.javafaker', name: 'javafaker', version: '1.0.2'
+
+    compileOnly "org.projectlombok:lombok:${lombokVersion}"
+    annotationProcessor "org.projectlombok:lombok:${lombokVersion}"
+    testCompileOnly "org.projectlombok:lombok:${lombokVersion}"
+    testAnnotationProcessor "org.projectlombok:lombok:${lombokVersion}"
+}
+
+test {
+    useJUnitPlatform()
+    testLogging.showStandardStreams = true
+    systemProperties System.getProperties()
+}
+
+serenity {
+    testRoot = "co.com.templay.pom.runners"
+    requirementsBaseDir = "src/test/resources/features"
+    reports = ["single-page-html"]
+}
+
+gradle.startParameter.continueOnFailure = true
+test.finalizedBy(aggregate)

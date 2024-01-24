@@ -1,0 +1,238 @@
+2024-01-24 04:49:38,160 INFO [Test worker] io.cucumber.core.plugin.SerenityReporter: Running feature from file:///C:/Users/niloa/OneDrive/Escritorio/Automation/SerenityPOM/TemplayAPI/RESTAssuredPOM/src/test/resources/features/crudApi.feature
+2024-01-24 04:49:38,275 INFO [Test worker] net.thucydides.core.logging.ConsoleLoggingListener: 
+
+-------------------------------------------------------------------------------------
+     _______. _______ .______       _______ .__   __.  __  .___________.____    ____ 
+    /       ||   ____||   _  \     |   ____||  \ |  | |  | |           |\   \  /   / 
+   |   (----`|  |__   |  |_)  |    |  |__   |   \|  | |  | `---|  |----` \   \/   /  
+    \   \    |   __|  |      /     |   __|  |  . `  | |  |     |  |       \_    _/   
+.----)   |   |  |____ |  |\  \----.|  |____ |  |\   | |  |     |  |         |  |     
+|_______/    |_______|| _| `._____||_______||__| \__| |__|     |__|         |__|    
+                                                                                     
+ News and tutorials at http://www.serenity-bdd.info                                  
+ Documentation at https://wakaleo.gitbooks.io/the-serenity-book/content/             
+ Join the Serenity Community on Gitter: https://gitter.im/serenity-bdd/serenity-core 
+ Serenity BDD Support and Training at http://serenity-bdd.info/#/trainingandsupport  
+-------------------------------------------------------------------------------------
+
+2024-01-24 04:49:38,279 INFO [Test worker] net.thucydides.core.logging.ConsoleLoggingListener: Test Suite Started: Api CRUD
+2024-01-24 04:49:38,291 INFO [Test worker] io.cucumber.core.plugin.SerenityReporter: Running feature from file:///C:/Users/niloa/OneDrive/Escritorio/Automation/SerenityPOM/TemplayAPI/RESTAssuredPOM/src/test/resources/features/crudApi.feature
+2024-01-24 04:49:38,293 INFO [Test worker] net.thucydides.core.logging.ConsoleLoggingListener: Test Suite Started: Api CRUD
+2024-01-24 04:49:38,345 INFO [Test worker] io.cucumber.core.plugin.SerenityReporter: Running feature from file:///C:/Users/niloa/OneDrive/Escritorio/Automation/SerenityPOM/TemplayAPI/RESTAssuredPOM/src/test/resources/features/crudApi.feature
+2024-01-24 04:49:38,359 INFO [Test worker] net.thucydides.core.logging.ConsoleLoggingListener: 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+Creacion usuario <Escenario>(api-crud;creacion-usuario-<escenario>)
+--------------------------------------------------------------------------------
+2024-01-24 04:49:38,485 INFO [Test worker] co.com.templay.api.pom.stepDefinitions.hook.hook: Realizando peticion ...
+2024-01-24 04:49:38,492 INFO [Test worker] co.com.templay.api.pom.stepDefinitions.AntecedentesStepDefinitions: ENDPOINT DE API: https://petstore.swagger.io/v2
+2024-01-24 04:49:38,763 INFO [Test worker] co.com.templay.api.pom.utils.JsonManager: leer archivo JSON ubicado en src/test/resources/data/bodyCreateUsuario.JSON
+2024-01-24 04:49:38,763 INFO [Test worker] co.com.templay.api.pom.utils.JsonManager: buscando archivo JSON ubicado en src/test/resources/data/bodyCreateUsuario.JSON
+2024-01-24 04:49:38,773 INFO [Test worker] co.com.templay.api.pom.utils.JsonManager: Escribiendo datos... {"id":123,"username":"NiloAcha","firstName":"Nilo","lastName":"Chaverra","email":"noTengo@test.com","password":"01234567890","phone":"12345678","userStatus":0}
+2024-01-24 04:49:38,787 INFO [Test worker] co.com.templay.api.pom.steps.PostStep: Body generado: {
+  "id" : 123,
+  "username" : "NiloAcha",
+  "firstName" : "Nilo",
+  "lastName" : "Chaverra",
+  "email" : "noTengo@test.com",
+  "password" : "01234567890",
+  "phone" : "12345678",
+  "userStatus" : 0
+}
+2024-01-24 04:49:40,753 INFO [Test worker] co.com.templay.api.pom.steps.PostStep: Response code: 200
+2024-01-24 04:49:40,758 INFO [Test worker] co.com.templay.api.pom.steps.PostStep: Response code esperado: 200
+2024-01-24 04:49:40,764 INFO [Test worker] net.thucydides.core.logging.ConsoleLoggingListener: 
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+
+Creacion usuario <Escenario>
+----------------------------------------------------------------------
+2024-01-24 04:49:40,772 INFO [Test worker] io.cucumber.core.plugin.SerenityReporter: Running feature from file:///C:/Users/niloa/OneDrive/Escritorio/Automation/SerenityPOM/TemplayAPI/RESTAssuredPOM/src/test/resources/features/crudApi.feature
+2024-01-24 04:49:40,776 INFO [Test worker] co.com.templay.api.pom.stepDefinitions.hook.hook: Realizando peticion ...
+2024-01-24 04:49:40,780 INFO [Test worker] co.com.templay.api.pom.stepDefinitions.AntecedentesStepDefinitions: ENDPOINT DE API: https://petstore.swagger.io/v2
+2024-01-24 04:49:40,784 INFO [Test worker] co.com.templay.api.pom.utils.JsonManager: leer archivo JSON ubicado en src/test/resources/data/bodyCreateUsuario.JSON
+2024-01-24 04:49:40,784 INFO [Test worker] co.com.templay.api.pom.utils.JsonManager: buscando archivo JSON ubicado en src/test/resources/data/bodyCreateUsuario.JSON
+2024-01-24 04:49:40,786 INFO [Test worker] co.com.templay.api.pom.utils.JsonManager: Escribiendo datos... {"id":123,"username":"NiloAcha","firstName":"Nilo","lastName":"Chaverra","email":"noTengo@test.com","password":"01234567890","phone":"12345600007890","userStatus":1}
+2024-01-24 04:49:40,787 INFO [Test worker] co.com.templay.api.pom.steps.PostStep: Body generado: {
+  "id" : 123,
+  "username" : "NiloAcha",
+  "firstName" : "Nilo",
+  "lastName" : "Chaverra",
+  "email" : "noTengo@test.com",
+  "password" : "01234567890",
+  "phone" : "12345600007890",
+  "userStatus" : 1
+}
+2024-01-24 04:49:41,176 INFO [Test worker] co.com.templay.api.pom.steps.PostStep: Response code: 200
+2024-01-24 04:49:41,200 ERROR [Test worker] net.thucydides.core.logging.ConsoleLoggingListener: 
+  _____   ___   ___   _____     ___     _     ___   _      ___   ___  
+ |_   _| | __| / __| |_   _|   | __|   /_\   |_ _| | |    | __| |   \ 
+   | |   | _|  \__ \   | |     | _|   / _ \   | |  | |__  | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___| |____| |___| |___/ 
+
+Creacion usuario <Escenario>
+-----------------------------------------------------------------------
+2024-01-24 04:49:41,262 ERROR [Test worker] net.thucydides.core.logging.ConsoleLoggingListener:     Test failed at step: Validar response code: 500
+2024-01-24 04:49:41,262 ERROR [Test worker] net.thucydides.core.logging.ConsoleLoggingListener:     expected:<500> but was:<200>
+2024-01-24 04:49:41,271 INFO [Test worker] io.cucumber.core.plugin.SerenityReporter: Running feature from file:///C:/Users/niloa/OneDrive/Escritorio/Automation/SerenityPOM/TemplayAPI/RESTAssuredPOM/src/test/resources/features/crudApi.feature
+2024-01-24 04:49:41,272 INFO [Test worker] net.thucydides.core.logging.ConsoleLoggingListener: 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+Consultar usuario <Escenario>(api-crud;consultar-usuario-<escenario>)
+--------------------------------------------------------------------------------
+2024-01-24 04:49:41,279 INFO [Test worker] co.com.templay.api.pom.stepDefinitions.hook.hook: Realizando peticion ...
+2024-01-24 04:49:41,282 INFO [Test worker] co.com.templay.api.pom.stepDefinitions.AntecedentesStepDefinitions: ENDPOINT DE API: https://petstore.swagger.io/v2
+2024-01-24 04:49:41,290 INFO [Test worker] co.com.templay.api.pom.utils.JsonManager: leer archivo JSON ubicado en src/test/resources/data/bodyCreateUsuario.JSON
+2024-01-24 04:49:41,291 INFO [Test worker] co.com.templay.api.pom.utils.JsonManager: buscando archivo JSON ubicado en src/test/resources/data/bodyCreateUsuario.JSON
+2024-01-24 04:49:41,699 INFO [Test worker] co.com.templay.api.pom.steps.GetStep: Response: {"id":123,"username":"NiloAcha","firstName":"Nilo","lastName":"Chaverra","email":"noTengo@test.com","password":"01234567890","phone":"12345600007890","userStatus":1}
+2024-01-24 04:49:41,702 INFO [Test worker] co.com.templay.api.pom.steps.GetStep: Response code esperado: 200
+2024-01-24 04:49:41,706 INFO [Test worker] net.thucydides.core.logging.ConsoleLoggingListener: 
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+
+Consultar usuario <Escenario>
+----------------------------------------------------------------------
+2024-01-24 04:49:41,711 INFO [Test worker] io.cucumber.core.plugin.SerenityReporter: Running feature from file:///C:/Users/niloa/OneDrive/Escritorio/Automation/SerenityPOM/TemplayAPI/RESTAssuredPOM/src/test/resources/features/crudApi.feature
+2024-01-24 04:49:41,714 INFO [Test worker] co.com.templay.api.pom.stepDefinitions.hook.hook: Realizando peticion ...
+2024-01-24 04:49:41,716 INFO [Test worker] co.com.templay.api.pom.stepDefinitions.AntecedentesStepDefinitions: ENDPOINT DE API: https://petstore.swagger.io/v2
+2024-01-24 04:49:41,720 INFO [Test worker] co.com.templay.api.pom.utils.JsonManager: leer archivo JSON ubicado en src/test/resources/data/bodyCreateUsuario.JSON
+2024-01-24 04:49:41,720 INFO [Test worker] co.com.templay.api.pom.utils.JsonManager: buscando archivo JSON ubicado en src/test/resources/data/bodyCreateUsuario.JSON
+2024-01-24 04:49:42,106 INFO [Test worker] co.com.templay.api.pom.steps.GetStep: Response: {"code":1,"type":"error","message":"User not found"}
+2024-01-24 04:49:42,109 INFO [Test worker] co.com.templay.api.pom.steps.GetStep: Response code esperado: 404
+2024-01-24 04:49:42,113 INFO [Test worker] net.thucydides.core.logging.ConsoleLoggingListener: 
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+
+Consultar usuario <Escenario>
+----------------------------------------------------------------------
+2024-01-24 04:51:19,880 INFO [Test worker] io.cucumber.core.plugin.SerenityReporter: Running feature from file:///C:/Users/niloa/OneDrive/Escritorio/Automation/SerenityPOM/TemplayAPI/RESTAssuredPOM/src/test/resources/features/crudApi.feature
+2024-01-24 04:51:19,999 INFO [Test worker] net.thucydides.core.logging.ConsoleLoggingListener: 
+
+-------------------------------------------------------------------------------------
+     _______. _______ .______       _______ .__   __.  __  .___________.____    ____ 
+    /       ||   ____||   _  \     |   ____||  \ |  | |  | |           |\   \  /   / 
+   |   (----`|  |__   |  |_)  |    |  |__   |   \|  | |  | `---|  |----` \   \/   /  
+    \   \    |   __|  |      /     |   __|  |  . `  | |  |     |  |       \_    _/   
+.----)   |   |  |____ |  |\  \----.|  |____ |  |\   | |  |     |  |         |  |     
+|_______/    |_______|| _| `._____||_______||__| \__| |__|     |__|         |__|    
+                                                                                     
+ News and tutorials at http://www.serenity-bdd.info                                  
+ Documentation at https://wakaleo.gitbooks.io/the-serenity-book/content/             
+ Join the Serenity Community on Gitter: https://gitter.im/serenity-bdd/serenity-core 
+ Serenity BDD Support and Training at http://serenity-bdd.info/#/trainingandsupport  
+-------------------------------------------------------------------------------------
+
+2024-01-24 04:51:20,002 INFO [Test worker] net.thucydides.core.logging.ConsoleLoggingListener: Test Suite Started: Api CRUD
+2024-01-24 04:51:20,014 INFO [Test worker] io.cucumber.core.plugin.SerenityReporter: Running feature from file:///C:/Users/niloa/OneDrive/Escritorio/Automation/SerenityPOM/TemplayAPI/RESTAssuredPOM/src/test/resources/features/crudApi.feature
+2024-01-24 04:51:20,016 INFO [Test worker] net.thucydides.core.logging.ConsoleLoggingListener: Test Suite Started: Api CRUD
+2024-01-24 04:51:20,069 INFO [Test worker] io.cucumber.core.plugin.SerenityReporter: Running feature from file:///C:/Users/niloa/OneDrive/Escritorio/Automation/SerenityPOM/TemplayAPI/RESTAssuredPOM/src/test/resources/features/crudApi.feature
+2024-01-24 04:51:20,082 INFO [Test worker] net.thucydides.core.logging.ConsoleLoggingListener: 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+Creacion usuario <Escenario>(api-crud;creacion-usuario-<escenario>)
+--------------------------------------------------------------------------------
+2024-01-24 04:51:20,216 INFO [Test worker] co.com.templay.api.pom.stepDefinitions.hook.hook: Realizando peticion ...
+2024-01-24 04:51:20,224 INFO [Test worker] co.com.templay.api.pom.stepDefinitions.AntecedentesStepDefinitions: ENDPOINT DE API: https://petstore.swagger.io/v2
+2024-01-24 04:51:20,494 INFO [Test worker] co.com.templay.api.pom.utils.JsonManager: leer archivo JSON ubicado en src/test/resources/data/bodyCreateUsuario.JSON
+2024-01-24 04:51:20,494 INFO [Test worker] co.com.templay.api.pom.utils.JsonManager: buscando archivo JSON ubicado en src/test/resources/data/bodyCreateUsuario.JSON
+2024-01-24 04:51:20,505 INFO [Test worker] co.com.templay.api.pom.utils.JsonManager: Escribiendo datos... {"id":123,"username":"NiloAcha","firstName":"Nilo","lastName":"Chaverra","email":"noTengo@test.com","password":"01234567890","phone":"12345678","userStatus":0}
+2024-01-24 04:51:20,517 INFO [Test worker] co.com.templay.api.pom.steps.PostStep: Body generado: {
+  "id" : 123,
+  "username" : "NiloAcha",
+  "firstName" : "Nilo",
+  "lastName" : "Chaverra",
+  "email" : "noTengo@test.com",
+  "password" : "01234567890",
+  "phone" : "12345678",
+  "userStatus" : 0
+}
+2024-01-24 04:51:22,377 INFO [Test worker] co.com.templay.api.pom.steps.PostStep: Response code: 200
+2024-01-24 04:51:22,384 INFO [Test worker] co.com.templay.api.pom.steps.PostStep: Response code esperado: 200
+2024-01-24 04:51:22,389 INFO [Test worker] net.thucydides.core.logging.ConsoleLoggingListener: 
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+
+Creacion usuario <Escenario>
+----------------------------------------------------------------------
+2024-01-24 04:51:22,396 INFO [Test worker] io.cucumber.core.plugin.SerenityReporter: Running feature from file:///C:/Users/niloa/OneDrive/Escritorio/Automation/SerenityPOM/TemplayAPI/RESTAssuredPOM/src/test/resources/features/crudApi.feature
+2024-01-24 04:51:22,400 INFO [Test worker] co.com.templay.api.pom.stepDefinitions.hook.hook: Realizando peticion ...
+2024-01-24 04:51:22,403 INFO [Test worker] co.com.templay.api.pom.stepDefinitions.AntecedentesStepDefinitions: ENDPOINT DE API: https://petstore.swagger.io/v2
+2024-01-24 04:51:22,407 INFO [Test worker] co.com.templay.api.pom.utils.JsonManager: leer archivo JSON ubicado en src/test/resources/data/bodyCreateUsuario.JSON
+2024-01-24 04:51:22,407 INFO [Test worker] co.com.templay.api.pom.utils.JsonManager: buscando archivo JSON ubicado en src/test/resources/data/bodyCreateUsuario.JSON
+2024-01-24 04:51:22,409 INFO [Test worker] co.com.templay.api.pom.utils.JsonManager: Escribiendo datos... {"id":123,"username":"NiloAcha","firstName":"Nilo","lastName":"Chaverra","email":"noTengo@test.com","password":"01234567890","phone":"12345600007890","userStatus":5}
+2024-01-24 04:51:22,410 INFO [Test worker] co.com.templay.api.pom.steps.PostStep: Body generado: {
+  "id" : 123,
+  "username" : "NiloAcha",
+  "firstName" : "Nilo",
+  "lastName" : "Chaverra",
+  "email" : "noTengo@test.com",
+  "password" : "01234567890",
+  "phone" : "12345600007890",
+  "userStatus" : 5
+}
+2024-01-24 04:51:22,816 INFO [Test worker] co.com.templay.api.pom.steps.PostStep: Response code: 200
+2024-01-24 04:51:22,837 ERROR [Test worker] net.thucydides.core.logging.ConsoleLoggingListener: 
+  _____   ___   ___   _____     ___     _     ___   _      ___   ___  
+ |_   _| | __| / __| |_   _|   | __|   /_\   |_ _| | |    | __| |   \ 
+   | |   | _|  \__ \   | |     | _|   / _ \   | |  | |__  | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___| |____| |___| |___/ 
+
+Creacion usuario <Escenario>
+-----------------------------------------------------------------------
+2024-01-24 04:51:22,891 ERROR [Test worker] net.thucydides.core.logging.ConsoleLoggingListener:     Test failed at step: Validar response code: 500
+2024-01-24 04:51:22,892 ERROR [Test worker] net.thucydides.core.logging.ConsoleLoggingListener:     expected:<500> but was:<200>
+2024-01-24 04:51:22,900 INFO [Test worker] io.cucumber.core.plugin.SerenityReporter: Running feature from file:///C:/Users/niloa/OneDrive/Escritorio/Automation/SerenityPOM/TemplayAPI/RESTAssuredPOM/src/test/resources/features/crudApi.feature
+2024-01-24 04:51:22,902 INFO [Test worker] net.thucydides.core.logging.ConsoleLoggingListener: 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+Consultar usuario <Escenario>(api-crud;consultar-usuario-<escenario>)
+--------------------------------------------------------------------------------
+2024-01-24 04:51:22,907 INFO [Test worker] co.com.templay.api.pom.stepDefinitions.hook.hook: Realizando peticion ...
+2024-01-24 04:51:22,910 INFO [Test worker] co.com.templay.api.pom.stepDefinitions.AntecedentesStepDefinitions: ENDPOINT DE API: https://petstore.swagger.io/v2
+2024-01-24 04:51:22,918 INFO [Test worker] co.com.templay.api.pom.utils.JsonManager: leer archivo JSON ubicado en src/test/resources/data/bodyCreateUsuario.JSON
+2024-01-24 04:51:22,919 INFO [Test worker] co.com.templay.api.pom.utils.JsonManager: buscando archivo JSON ubicado en src/test/resources/data/bodyCreateUsuario.JSON
+2024-01-24 04:51:23,322 INFO [Test worker] co.com.templay.api.pom.steps.GetStep: Response: {"id":123,"username":"NiloAcha","firstName":"Nilo","lastName":"Chaverra","email":"noTengo@test.com","password":"01234567890","phone":"12345600007890","userStatus":5}
+2024-01-24 04:51:23,325 INFO [Test worker] co.com.templay.api.pom.steps.GetStep: Response code esperado: 200
+2024-01-24 04:51:23,330 INFO [Test worker] net.thucydides.core.logging.ConsoleLoggingListener: 
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+
+Consultar usuario <Escenario>
+----------------------------------------------------------------------
+2024-01-24 04:51:23,336 INFO [Test worker] io.cucumber.core.plugin.SerenityReporter: Running feature from file:///C:/Users/niloa/OneDrive/Escritorio/Automation/SerenityPOM/TemplayAPI/RESTAssuredPOM/src/test/resources/features/crudApi.feature
+2024-01-24 04:51:23,340 INFO [Test worker] co.com.templay.api.pom.stepDefinitions.hook.hook: Realizando peticion ...
+2024-01-24 04:51:23,342 INFO [Test worker] co.com.templay.api.pom.stepDefinitions.AntecedentesStepDefinitions: ENDPOINT DE API: https://petstore.swagger.io/v2
+2024-01-24 04:51:23,346 INFO [Test worker] co.com.templay.api.pom.utils.JsonManager: leer archivo JSON ubicado en src/test/resources/data/bodyCreateUsuario.JSON
+2024-01-24 04:51:23,346 INFO [Test worker] co.com.templay.api.pom.utils.JsonManager: buscando archivo JSON ubicado en src/test/resources/data/bodyCreateUsuario.JSON
+2024-01-24 04:51:23,738 INFO [Test worker] co.com.templay.api.pom.steps.GetStep: Response: {"code":1,"type":"error","message":"User not found"}
+2024-01-24 04:51:23,741 INFO [Test worker] co.com.templay.api.pom.steps.GetStep: Response code esperado: 404
+2024-01-24 04:51:23,745 INFO [Test worker] net.thucydides.core.logging.ConsoleLoggingListener: 
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+
+Consultar usuario <Escenario>
+----------------------------------------------------------------------

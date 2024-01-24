@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="2" failures="0" name="Api CRUD" skipped="0" tests="2" time="0.27" timestamp="2024-01-21 03:29:48"><testcase name="Crear usuario"><error message="No value present" type="java.util.NoSuchElementException">No value present</error><system-err>No value present&#13;
+co.com.templay.api.pom.stepDefinitions.hook.hook.configureBaseUrl(hook.java:13)&#13;
+</system-err></testcase><testcase name="Consultar usuario"><error message="No value present" type="java.util.NoSuchElementException">No value present</error><system-err>No value present&#13;
+co.com.templay.api.pom.stepDefinitions.hook.hook.configureBaseUrl(hook.java:13)&#13;
+</system-err></testcase></testsuite>

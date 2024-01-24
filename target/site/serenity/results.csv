@@ -1,0 +1,5 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Api CRUD","Crear usuario","ERROR","2024-01-21T15:29:48.552-05:00[America/Bogota]","0.0","0.23"
+"Api CRUD","Consultar usuario","ERROR","2024-01-21T15:29:48.796-05:00[America/Bogota]","0.0","0.04"
+"Api CRUD","Creacion usuario <Escenario>","FAILURE","2024-01-24T04:51:20.083-05:00[America/Bogota]","0.0","2.81"
+"Api CRUD","Consultar usuario <Escenario>","SUCCESS","2024-01-24T04:51:22.902-05:00[America/Bogota]","0.0","0.84"
